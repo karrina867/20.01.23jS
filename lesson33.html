@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        localStorage.setItem('userName','Karina');
+        localStorage.setItem('userAge',15);
+
+        console.log(localStorage.getItem('userName'));
+    
+        localStorage.removeItem('userAge');
+
+        localStorage.clear();
+
+        let arr ={
+            name:'karina',
+            surname: ' h'
+        }
+        let name = JSON.stringify(arr);
+        localStorage.setItem('Name',name);
+
+        console.log(JSON.parse(localStorage.getItem('userName')));
+    
+    </script>
+</body>
+</html>
